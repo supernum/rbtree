@@ -55,6 +55,7 @@ int main(int argc, char** argv) {
     }
     /* delete data */
     for (i = 0, num--; num >= 0; num--, i++) {
+        //rbt_tree_node_t *n = rbt_delete(rb, i);
         rbt_tree_node_t *n = rbt_delete(rb, num);
         if (n) {
             printf("delete key=%ld, tree=", n->key);
